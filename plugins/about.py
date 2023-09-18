@@ -12,4 +12,11 @@ async def start(client,message):
 	data = find_one(int(botid))
 	total_rename = data["total_rename"]
 	total_size = data["total_size"]
-	await message.reply_text(f"Origional BOT :- <a href='https://t.me/GangsterBaby_renamer_BOT'>Gangster Baby</a>\nCreater :- <a href='https://t.me/LazyDeveloper'>🦋LazyDeveloper🦋</a>\nLanguage :- Python3\nLibrary :- Pyrogram 2.0\nServer :- KOYEB\nTotal Renamed File :- {total_rename}\nTotal Size Renamed :- {humanbytes(int(total_size))} \n\n Thank you **<a href='https://t.me/mRiderDM'>LazyDeveloperr</a>** for your hard work \n\n❤️ we love you <a href='https://t.me/mRiderDM'>**LazyDeveloper**</a> ❤️",quote=True)
+	await message.reply_text(f"<b>
+ 🤖 ᴍʏ ɴᴀᴍᴇ : {}
+ 👨‍💻 ᴄʀᴇᴀᴛᴏʀ : <a href='https://t.me/XAYOONARA'>𝑿𝑨𝒀𝑶𝑵𝑨𝑹𝑨</a>
+ 📚 ʟɪʙʀᴀʀʏ : <a href='https://docs.pyrogram.org/'>ᴘʏʀᴏɢʀᴀᴍ</a>
+ 📝 ʟᴀɴɢᴜᴀɢᴇ : <a href='https://www.python.org/download/releases/3.0/'>ᴘʏᴛʜᴏɴ 3</a>
+ ♻️ ᴅᴀᴛᴀ ʙᴀsᴇ : <a href='https://www.mongodb.com/'>ᴍᴏɴɢᴏ ᴅʙ</a>
+ 📡 ʜᴏsᴛᴇᴅ ᴏɴ  : <a href='https://www.heroku.com/'>Heroku</a>
+ 🥶 ʙᴜɪʟᴅ sᴛᴀᴛᴜs : ᴠ3.0 [sᴛᴀʙʟᴇ]</b>",quote=True)
