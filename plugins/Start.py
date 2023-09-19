@@ -29,7 +29,7 @@ LAZY_PIC = os.environ.get("LAZY_PIC", "")
 # Part of Day --------------------
 currentTime = datetime.datetime.now()
 
-if currentTime< 12:
+        if currentTime< 12:
             wish = "**ɢᴏᴏᴅ ᴍᴏʀɴɪɴɢ ☕**" 
         elif currentTime < 17:
             wish = "**ɢᴏᴏᴅ ᴀғᴛᴇʀɴᴏᴏɴ 😈**"
