@@ -75,17 +75,16 @@ async def start(client, message):
             limit = _user_["uploadlimit"]
             new_limit = limit + 104857600
             uploadlimit(int(id), new_limit)
-            await message.reply_text(text=f"""
-	**__ʜᴇʏ__** **{message.from_user.first_name }** **{wish}**\n
-	**__ɪ ᴀᴍ ᴘᴏᴡᴇʀꜰᴜʟʟ & ᴀᴅᴠᴀɴᴄᴇ 4 ɢʙ+ ʀᴇɴᴀᴍᴇʀ ʙᴏᴛ ᴊᴜꜱᴛ ꜱᴇɴᴅ ᴍᴇ ᴀɴʏ ꜰɪʟᴇ__**
-	""", reply_to_message_id=message.id,
-                                     reply_markup=InlineKeyboardMarkup(
+            await message.reply_text(txt=f"""**__ʜᴇʏ__** **{message.from_user.first_name }** **{wish}**\n
+	**__ɪ ᴀᴍ ᴘᴏᴡᴇʀꜰᴜʟʟ & ᴀᴅᴠᴀɴᴄᴇ 4 ɢʙ+ ʀᴇɴᴀᴍᴇʀ ʙᴏᴛ ᴊᴜꜱᴛ ꜱᴇɴᴅ ᴍᴇ ᴀɴʏ ꜰɪʟᴇ__**"""
+        reply_markup=InlineKeyboardMarkup(
                                          [[InlineKeyboardButton("ꜱᴜᴘᴘᴏʀᴛ", url='https://telegram.me/MYFLiiX_2')],
                                                                      [InlineKeyboardButton("ᴜᴘᴅᴀᴛᴇ", url='https://t.me/MYFLiiX')],
                                                                      [InlineKeyboardButton("ᴘʀᴇᴍɪᴜᴍ", url='https://t.me/xayoonara'),
                                                                      InlineKeyboardButton("ᴅᴇᴠʟᴏᴘᴇʀ", url='https://t.me/xayoonara')],
                                                                     ]))
-    
+
+
 
 
 @Client.on_message((filters.private & (filters.document | filters.audio | filters.video)) | filters.channel & (filters.document | filters.audio | filters.video))
