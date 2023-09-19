@@ -28,16 +28,15 @@ LAZY_PIC = os.environ.get("LAZY_PIC", "")
 
 
 # Part of Day --------------------
-current_time = datetime.now(pytz.timezone(TIMEZONE))
-        curr_time = current_time.hour        
-        if curr_time < 12:
-            gtxt = "<b>ɢᴏᴏᴅ ᴍᴏʀɴɪɴɢ ☕</b>" 
-        elif curr_time < 17:
-            gtxt = "<b>ɢᴏᴏᴅ ᴀғᴛᴇʀɴᴏᴏɴ 😈</b>" 
-        elif curr_time < 21:
-            gtxt = "<b>ɢᴏᴏᴅ ᴇᴠᴇɴɪɴɢ 🌇</b>"
+current_time = datetime.now(pytz.timezone(TIMEZONE))       
+        if curr_time.hour < 12:
+            gtxt = "**ɢᴏᴏᴅ ᴍᴏʀɴɪɴɢ ☕**" 
+        elif curr_time.hour < 17:
+            gtxt = "**ɢᴏᴏᴅ ᴀғᴛᴇʀɴᴏᴏɴ 😈**" 
+        elif curr_time.hour < 21:
+            gtxt = "**ɢᴏᴏᴅ ᴇᴠᴇɴɪɴɢ 🌇**"
         else:
-            gtxt = "<b>ɢᴏᴏᴅ ɴɪɢʜᴛ 🥱</b>"
+            gtxt = "**ɢᴏᴏᴅ ɴɪɢʜᴛ 🥱**"
 # -------------------------------
 
 
