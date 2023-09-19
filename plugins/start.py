@@ -1,5 +1,5 @@
 from datetime import date as date_
-import datetime
+import datetime import datetime 
 import os
 import pytz
 from pyrogram.errors.exceptions.bad_request_400 import UserNotParticipant
@@ -48,7 +48,7 @@ async def start(client, message):
     try:
         id = message.text.split(' ')[1]
     except:
-        txt=f"""Hello {wish} {message.from_user.first_name } \n\n
+        txt=f"""Hello {gtxt} {message.from_user.first_name } \n\n
 	I am file renamer bot, Please sent any telegram**Document Or Video** and enter new filename to rename it"""
         await message.reply_photo(photo=LAZY_PIC,
                                 caption=txt,
