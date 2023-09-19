@@ -1,5 +1,4 @@
-from datetime import date as date_
-import datetime import datetime 
+from datetime import datetime 
 import os
 import pytz
 from pyrogram.errors.exceptions.bad_request_400 import UserNotParticipant
