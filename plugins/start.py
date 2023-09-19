@@ -1,6 +1,7 @@
 from datetime import date as date_
 import datetime
 import os
+import pytz
 from pyrogram.errors.exceptions.bad_request_400 import UserNotParticipant
 import time
 from pyrogram import Client, filters
@@ -15,6 +16,7 @@ from helper.database import daily as daily_
 from helper.date import check_expi
 import os
 
+TIMEZONE = "Asia/Kolkata"
 CHANNEL = os.environ.get('CHANNEL', "")
 STRING = os.environ.get("STRING", "")
 ADMIN = int(os.environ.get("ADMIN", 1484670284))
@@ -27,15 +29,16 @@ LAZY_PIC = os.environ.get("LAZY_PIC", "")
 
 
 # Part of Day --------------------
-currentTime = datetime.datetime.now()
-
-if currentTime.hour < 12:
-    wish = "❤️ Good morning sweetheart ❤️"
-elif 12 <= currentTime.hour < 12:
-    wish = '🤍 Good afternoon my Love 🤍'
-else:
-    wish = '🦋 Good evening baby 🦋'
-
+current_time = datetime.now(pytz.timezone(TIMEZONE))
+        curr_time = current_time.hour        
+        if curr_time < 12:
+            gtxt = "<b>ɢᴏᴏᴅ ᴍᴏʀɴɪɴɢ ☕</b>" 
+        elif curr_time < 17:
+            gtxt = "<b>ɢᴏᴏᴅ ᴀғᴛᴇʀɴᴏᴏɴ 😈</b>" 
+        elif curr_time < 21:
+            gtxt = "<b>ɢᴏᴏᴅ ᴇᴠᴇɴɪɴɢ 🌇</b>"
+        else:
+            gtxt = "<b>ɢᴏᴏᴅ ɴɪɢʜᴛ 🥱</b>"
 # -------------------------------
 
 
